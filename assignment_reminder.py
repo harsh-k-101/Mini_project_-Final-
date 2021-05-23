@@ -131,7 +131,7 @@ def clear_old_assignments():
 
 
 choice = 0
-while choice != 'z' :
+while True :
     choice = input("1: add assignment , 2: due today, 3: all due , 4: clear old assignments, z:exit :")
 
     if choice == '1':
@@ -147,6 +147,7 @@ while choice != 'z' :
     elif choice == '4':
         clear_old_assignments()
         print("Old Assignments Deleted!")
-
+    elif choice == 'z':
+        break;
     else:
         print("Invalid choice:")
