@@ -94,10 +94,11 @@ def today_submission():
     
     listToStr = ' '.join([str(elem) for elem in today_dueexp])
 
-    if __name__ == "__main__" :
-         notification.notify(
+    #if __name__ == "__main__" :
+    notification.notify(
          title = " Assignments Due today ",
-         message = " In Total " + count + " assignment(s) " + listToStr + " due today " ,
+         message = " In Total " + str(count) + " assignment(s) " + listToStr + " due today " ,
+         app_icon = "assignment.ico",
          timeout = 15, 
       )
 
@@ -129,9 +130,9 @@ def clear_old_assignments():
     due.clear()
     
 
-
-choice = 0
-while True :
+def run_assignment():
+  choice = 0
+  while True:
     choice = input("1: add assignment , 2: due today, 3: all due , 4: clear old assignments, z:exit :")
 
     if choice == '1':
@@ -147,7 +148,11 @@ while True :
     elif choice == '4':
         clear_old_assignments()
         print("Old Assignments Deleted!")
+    
     elif choice == 'z':
         break;
+
     else:
         print("Invalid choice:")
+
+#run_assignment()
