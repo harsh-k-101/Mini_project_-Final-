@@ -15,29 +15,21 @@ def notify_me(medicine_name):
 def run_medicine():
 
     medicine_name = input("Enter the name of medicine: ")
-    number_of_dosage = int(input("Enter the number of dosage: "))
- 
-    dose_count = copy.deepcopy(number_of_dosage)
-
-    choice = 0
         
-    notifytime = input("Enter time to notify:")
-    
     while True:
-      current_time=time.strftime("%H:%M:%S")
+      notifytime = input("Enter time to notify:")
 
-      if current_time==notifytime:
-        notify_me(medicine_name)
-        dose_count = dose_count - 1 
-            
-        choice = input("If you have fever take " + medicine_name + " and your dose if no press 'n': ")
+      while True:
+        current_time=time.strftime("%H:%M:%S")
 
-        if dose_count == 0:
-            print("Your doses for today are finished")
-            break;
+        if current_time==notifytime:
 
-        if choice == 'n':
-            break;
+          notify_me(medicine_name)  
 
-print("Go to doctor for check up !")
+          choice = input("If you have fever take " + medicine_name + " and your dose if no press 'n': ")
+          break;
 
+      if choice == 'n':
+        break;
+
+#run_medicine()
