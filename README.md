@@ -1,4 +1,9 @@
 # Mini_project_-Final-
+group members:
+Shreyas Raskar 16010520087
+Harsh Khot 16010520088
+Awwab Khot 16010520091
+
 
 This includes the main file to run the program: Reminder_mainfile.py
 The other program files are:
