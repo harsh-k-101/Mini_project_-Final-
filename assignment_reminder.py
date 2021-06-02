@@ -57,17 +57,19 @@ def check_due_all():
             remaining_exp.append(name_exp[i])
             remaining_due.append(due[i])
 
-            
-    print("\nDue assignments \t dates ")
+    print("----------------------------------------------")        
+    print("\nDue assignments \t  dates ")
     for i in range(0,len(due)):
         due_date_obj = datetime.strptime( due[i] , '%d/%m/%y')
 
         if ((due_date_obj.month >= now.month ) or (due_date_obj.day >= now.day and due_date_obj.month >= now.month ))  :            
-          print(name_exp[i] + '\t \t ' + due[i])
-
+          print(name_exp[i] + '\t \t \t' + due[i])
+    
+    print("----------------------------------------------")
     print("\nOver assignments \t  dates ")
     for i in range(0,len(remaining_due)):
-       print(remaining_exp[i] + '\t \t ' + remaining_due[i])
+       print(remaining_exp[i] + '\t \t \t ' + remaining_due[i])
+    print("----------------------------------------------")
 
 
 def today_submission():
@@ -81,8 +83,6 @@ def today_submission():
     with open('exp_date_file.txt') as f:
         due =  [line.rstrip() for line in f]
     f.close()
-
-
 
     for i in range(0,len(due)):
       due_date_obj = datetime.strptime( due[i] , '%d/%m/%y')
@@ -132,8 +132,13 @@ def clear_old_assignments():
 
 def run_assignment():
   choice = 0
+  print("---> For adding assignments       press: 1")
+  print("---> To check due today           press: 2")
+  print("---> To check all due             press: 3")
+  print("---> To clear overdue assignments press: 4")
+  print("To exit press: z")
   while True:
-    choice = input("1: add assignment , 2: due today, 3: all due , 4: clear old assignments, z:exit :")
+    choice = input("Enter your choice: ")
 
     if choice == '1':
         get_data()
