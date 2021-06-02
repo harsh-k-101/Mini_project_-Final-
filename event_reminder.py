@@ -14,13 +14,12 @@ def snooze():
     choice = 0
     choice = input("Do you want me to remind you after 5 Mins.Type 'Yes' to continue 'No' to stop: ")
     while choice !="No":
-        # choice = input("Do you want me to remind you after 5 Mins.Type 'Yes' to continue 'No' to stop: ")
         time.sleep(5)
         event_notification()
         
 
-#event_notification()
-#snooze()
+event_notification()
+snooze()
 
 
 
