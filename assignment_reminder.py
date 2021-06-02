@@ -63,9 +63,9 @@ def check_due_all():
         due_date_obj = datetime.strptime( due[i] , '%d/%m/%y')
 
         if ((due_date_obj.month >= now.month ) or (due_date_obj.day >= now.day and due_date_obj.month >= now.month ))  :            
-          print(name_exp[i] + '\t \t' + due[i])
+          print(name_exp[i] + '\t \t ' + due[i])
 
-    print("\nOver assignments \t \t dates ")
+    print("\nOver assignments \t  dates ")
     for i in range(0,len(remaining_due)):
        print(remaining_exp[i] + '\t \t ' + remaining_due[i])
 
