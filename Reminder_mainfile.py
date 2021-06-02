@@ -10,11 +10,17 @@ from plyer import notification
 choice = 0 
 
 print("Hi this is reminder notification program enter your choice:")
-print("For adding a specific reminder press: 1 \nFor setting a medicine reminder press: 2 \nAssignment Reminder press: 3\nTo exit the app press z \n")
-
+print("----------------------------------------------")
+print("---> For Specific Reminder           press: 1")
+print("---> For setting a Medicine Reminder press: 2")
+print("---> For Assignment Reminder         press: 3")
+print("---> For Sedentry Reminder           press: 4")
+print("To exit press: z\n")
 
 while choice != 'z' :
-    choice = input("\nEnter your choice: ")
+    print("----------------------------------------------")
+    choice = input("Enter your choice: ")
+    print("----------------------------------------------")
 
     if choice == '1' :
         event_reminder.event_notification()
