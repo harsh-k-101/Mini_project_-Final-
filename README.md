@@ -1,4 +1,4 @@
-# Mini_project_-Final-
+# Mini_project FY-Mech-Jdiv-J2
 group members:
 Shreyas Raskar 16010520087
 Harsh Khot 16010520088
