@@ -70,6 +70,8 @@ def check_due_all():
     for i in range(0,len(remaining_due)):
        print(remaining_exp[i] + '\t \t \t ' + remaining_due[i])
     print("----------------------------------------------")
+    remaining_due.clear()
+    remaining_exp.clear()
 
 
 def today_submission():
