@@ -16,15 +16,12 @@ Harsh Khot 16010520088:
 Awwab Khot 16010520091
    medicine_reminder.py
 
-common to all:
+Common to all:
    sedentary_reminder.py
    
 For running the program run the: Reminder_mainfile.py which has called the functions from the other sub python files
 For each of the functions of programs the .ico files are icon files to display on notification
 
-you must download plyer module before running the code: By typing : pip install plyer 
-: in the command prompt or the terminal. 
-
-
-Following code is done by: 
+you must download plyer module before running the code: By typing: pip install plyer 
+in the command prompt or the terminal. 
 
